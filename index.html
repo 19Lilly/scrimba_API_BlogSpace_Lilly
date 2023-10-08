@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <nav>
+          <h3>BlogSpace</h3>
+        </nav>
+      </header>
+      <form class="new-post">
+        <label for="post-title-form">
+            Title:
+            <input type="text" id="post-title-form">
+        </label>
+        <label for="post-body-form">
+            Body:
+            <textarea name="post-body-form" id="post-body-form" rows="5"></textarea>
+        </label>
+        <button class="btn post">Post</button>
+        
+      </form>
+      <div class="post-container"></div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  font: inherit;
+}
+button {
+  border: none;
+  font: inherit;
+}
+
+body {
+  padding: 0 2em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #EEEEE5;
+  color: #152315;
+}
+
+.container {
+  width: min(25rem, 98%);
+}
+
+header {
+  position: fixed;
+  background-color: #293a29;
+  color: #fff;
+  padding: 0.25em;
+  font-size: 2rem;
+  width: inherit;
+}
+
+form {
+    margin: 5em 0 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color:  #C4D9C3;
+    padding: 1em;
+    border-radius: 6px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    font-size: 1.2rem;
+    color: #293a29;
+    font-weight: 700;
+}
+
+input, textarea{
+    border: none;
+    background-color: ;
+    padding: 0.6em;
+    border-radius: 6px;
+    color: #152315;
+}
+
+input:focus, 
+textarea:focus {
+    border: none;
+    outline: 3px solid #293a29;
+}
+
+.post {
+    background-color: #387272;
+    padding: 0.8em;
+    border-radius: 6px;
+    font-weight: 700;
+    color: #C4D9C3;
+    cursor: pointer;
+}
+
+.post-title {
+  color: #293a29;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.post-body:not(:last-of-type) {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #293a29;
+}
